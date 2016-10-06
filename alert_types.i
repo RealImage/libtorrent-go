@@ -7,4 +7,4 @@ namespace libtorrent {
     class feed_item;
     class stat;
 }
-%include "alert_types_mod.hpp"
+//%include "alert_types_mod.hpp"

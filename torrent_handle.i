@@ -1,5 +1,6 @@
 %{
 #include <libtorrent/torrent_handle.hpp>
+#include <libtorrent/announce_entry.hpp>
 %}
 
 %include <std_vector.i>
@@ -22,11 +23,11 @@
 // Since the refcounter is allocated with libtorrent_info,
 // we can just increase the refcount and return the raw pointer.
 // Once we delete the object, it will also delete the refcounter.
-%extend libtorrent::torrent_handle {
-    const libtorrent::torrent_info* torrent_file() {
-        return self->torrent_file().detach();
-    }
-}
+//%extend libtorrent::torrent_handle {
+//    const libtorrent::torrent_info* torrent_file() {
+//        return self->torrent_file().detach();
+//    }
+//}
 %ignore libtorrent::torrent_handle::torrent_file;
 
 %extend libtorrent::partial_piece_info {

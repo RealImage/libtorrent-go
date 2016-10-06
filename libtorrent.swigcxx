@@ -47,7 +47,6 @@ namespace libtorrent
 %ignore libtorrent::log_time;
 %ignore libtorrent::parse_int;
 
-
 %include <boost/preprocessor/cat.hpp>
 %include <boost/version.hpp>
 %include <boost/config/suffix.hpp>
@@ -62,7 +61,6 @@ namespace libtorrent
 %include <libtorrent/export.hpp>
 %include <libtorrent/version.hpp>
 %include <libtorrent/build_config.hpp>
-%include <libtorrent/size_type.hpp>
 %include <libtorrent/error_code.hpp>
 %include <libtorrent/error.hpp>
 
@@ -74,13 +72,11 @@ namespace libtorrent
 %include <libtorrent/session_settings.hpp>
 %include "torrent_handle.i"
 %include <libtorrent/session_status.hpp>
-%include "add_torrent_params.i"
+// %include "add_torrent_params.i"
 %include "alert.i"
 %include "alert_types.i"
-%include <libtorrent/ptime.hpp>
 %include <libtorrent/time.hpp>
 %include "create_torrent.i"
 %include "dht.i"
-%include "upnp.i"
 %include "session.i"
 %include "ed25519.i"

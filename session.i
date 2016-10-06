@@ -2,6 +2,7 @@
 #include <libtorrent/session.hpp>
 %}
 
+%ignore ipv6_nodeprecate_;
 %include <std_vector.i>
 
 namespace libtorrent
@@ -11,6 +12,7 @@ namespace libtorrent
     class cached_piece_info;
     class feed_settings;
     class feed_handle;
+    class settings_pack;
 }
 
 // These are problematic, so we ignore them.

@@ -1,0 +1,10 @@
+prefix=/opt/boost/1.60.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir_old=${prefix}/include/boost
+includedir_new=${prefix}/include
+
+Name: boost
+Description: Boost library
+Version: 1.60.0
+Libs: ${libdir}/libboost_system.a ${libdir}/libboost_chrono.a ${libdir}/libboost_random.a

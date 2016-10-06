@@ -8,7 +8,7 @@
 
 namespace libtorrent {
     std::string bencode(const entry& e);
-    error_code lazy_bdecode(std::string data, lazy_entry& ret);
+    //error_code lazy_bdecode(std::string data, lazy_entry& ret);
 }
 
 %{
@@ -19,10 +19,10 @@ namespace libtorrent {
         return oss.str();
     }
 
-    error_code lazy_bdecode(std::string data, lazy_entry& ret) {
+    /*error_code lazy_bdecode(std::string data, lazy_entry& ret) {
         error_code ec;
         lazy_bdecode((const char*)data.data(), (const char*)(data.data() + data.size()), ret, ec);
         return ec;
-    }
+    }*/
 }
 %}
