@@ -72,7 +72,7 @@ namespace libtorrent
 %include <libtorrent/session_settings.hpp>
 %include "torrent_handle.i"
 %include <libtorrent/session_status.hpp>
-// %include "add_torrent_params.i"
+%include "add_torrent_params.i"
 %include "alert.i"
 %include "alert_types.i"
 %include <libtorrent/time.hpp>
